@@ -7,7 +7,7 @@
         La variable $_SERVER['PHP_SELF'] permet de connaître le fichier lu actuellement
         La fonction PHP basename() permet d'extraire le nom du fichier
         -->
-        <?php
+        <!--<?php
             $title="";  /* cette variable contient le texte à placer dans <title> */
             switch(basename($_SERVER['PHP_SELF'])) {
                 case "index.php" : $title = "Bruxelles - Accueil"; break;
@@ -19,8 +19,9 @@
                 case "liens.php" : $title = "Bruxelles - Liens"; break;
                 default : $title = "Bruxelles";
             }
-            echo "<title>".$title."</title>";
-        ?>
+            
+        ?>-->
+        <title><%= title %></title>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

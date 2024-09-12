@@ -34,7 +34,7 @@ app.get('/liens', function(request, response, next){
 
 
 app.use(function(request, response, next) {
-    response.status(404).render('404.ejs', {msg: "La page demandée n'existe pas"});
+    response.status(404).render('404.ejs', {title: "La page demandée n'existe pas"});
 });
 
 app.listen(8080);
